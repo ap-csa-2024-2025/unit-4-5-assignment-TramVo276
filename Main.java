@@ -28,14 +28,20 @@ public class Main
 
   public static void printNums()
   {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Input a number: ");
-    for (i = 0)
+    
   }
 
   public static void uprightNumberTriangle(int N)
   {
-    // code solution here
+    for (int row = 1; row <= N; row++)//at some row
+    {
+      for (int num = 1; num <= row; num++) // print all numbers in that row
+      {
+        System.out.println(num + " ");
+      }
+      System.out.println(); //blank line in between rows
+    }
+
   }
 
   public static void starTree()
@@ -45,6 +51,15 @@ public class Main
 
   public static void multTable()
   {
-    // code solution here
+    for (int row = 1; row <= 10; row++)
+    {
+      for (int num = 1; num <= 10; num++)
+      {
+        System.out.println(row * (num + 1));
+      }
+      System.out.print(" ")
+    }
+
+
   }
 }
