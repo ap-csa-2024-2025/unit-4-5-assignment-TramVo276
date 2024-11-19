@@ -46,7 +46,20 @@ public class Main
 
   public static void starTree()
   {
-    // code solution here
+    int num_of_spaces = 0;
+    for(int row = 9; row >= 1; row--) // each row of starts)
+    {
+      for (int space = 0; space < num_of_spaces; space++) //number of space
+      {
+       System.out.println(" ");
+      }
+      for (int start = 0; star < row; star++)
+      {
+        System.out.println(" ");
+      }
+      num_of_spaces++;
+      System.out.println();
+    }
   }
 
   public static void multTable()
